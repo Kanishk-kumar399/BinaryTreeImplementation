@@ -36,4 +36,14 @@ public class MyBinaryTreeTest
     	int size=myBinaryTree.getSize();
     	Assert.assertEquals(13,size);
     }
+    @Test
+    public void givenANumber_WhenSearhcedInBinaryTree_ShouldReturnTrue()
+    {
+    	MyBinaryTree<Integer> myBinaryTree=new MyBinaryTree<>();
+    	myBinaryTree.add(56);
+    	myBinaryTree.add(30);
+    	myBinaryTree.add(70);
+    	int size=myBinaryTree.getSize();
+    	Assert.assertEquals(true,myBinaryTree.containsNode(70));
+    }
 }
